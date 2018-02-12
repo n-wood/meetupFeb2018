@@ -1,11 +1,9 @@
-Step2: Add OWASP DC:
+Step2: suppress tomcat warning
 
+<configuration>
+	<suppressionFile>${basedir}/supression.xml</suppressionFile>
+</configuration>
 
-			<plugin>
-			    <groupId>org.owasp</groupId>
-			    <artifactId>dependency-check-maven</artifactId>
-			    <version>3.0.2</version>
-			</plugin>
 
 mvn dependency-check:check
 
