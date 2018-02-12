@@ -1,8 +1,10 @@
-Step2: suppress tomcat warning
+Step2: fix jackson databind warning
 
-<configuration>
-	<suppressionFile>${basedir}/supression.xml</suppressionFile>
-</configuration>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.8.11.1</version>
+		</dependency>
 
 
 mvn dependency-check:check
