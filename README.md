@@ -1,12 +1,13 @@
-Step2: fix jackson databind warning
+Step5: jenkins integration
 
-		<dependency>
-		    <groupId>com.fasterxml.jackson.core</groupId>
-		    <artifactId>jackson-databind</artifactId>
-		    <version>2.8.11.1</version>
-		</dependency>
+			<plugin>
+			    <groupId>org.owasp</groupId>
+			    <artifactId>dependency-check-maven</artifactId>
+			    <version>3.0.2</version>
+			    <configuration>
+					<suppressionFile>${basedir}/supression.xml</suppressionFile>
+					<format>xml</format>
+				</configuration>
+			</plugin>
 
-
-mvn dependency-check:check
-
-firefox target/dependency-check-report.html 
+http://localhost:8080/

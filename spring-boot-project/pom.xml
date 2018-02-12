@@ -54,6 +54,7 @@
 			    <version>3.0.2</version>
 			    <configuration>
 					<suppressionFile>${basedir}/supression.xml</suppressionFile>
+					<format>xml</format>
 				</configuration>
 			</plugin>
 		</plugins>
