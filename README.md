@@ -1,4 +1,4 @@
-Step2: suppress tomcat warning
+Step3: suppress tomcat warning
 
 <configuration>
 	<suppressionFile>${basedir}/supression.xml</suppressionFile>
