@@ -1,5 +1,12 @@
-Step1: Run dependency report on spring boot project
+Step2: Add OWASP DC:
 
-mvn project-info-reports:dependencies -DoutputDirectory=. -Ddependency.locations.enabled=false
 
-firefox target/site/dependencies.html 
+			<plugin>
+			    <groupId>org.owasp</groupId>
+			    <artifactId>dependency-check-maven</artifactId>
+			    <version>3.0.2</version>
+			</plugin>
+
+mvn dependency-check:check
+
+firefox target/dependency-check-report.html 
