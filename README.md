@@ -1,13 +1,9 @@
-Step5: jenkins integration
+Step6: struts vulnerability
 
-			<plugin>
-			    <groupId>org.owasp</groupId>
-			    <artifactId>dependency-check-maven</artifactId>
-			    <version>3.0.2</version>
-			    <configuration>
-					<suppressionFile>${basedir}/supression.xml</suppressionFile>
-					<format>xml</format>
-				</configuration>
-			</plugin>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.5.10</version>
+		</dependency>
 
 http://localhost:8080/
